@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Delay Prediction Project</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f6fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #2f3640;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .container {
+            width: 85%;
+            margin: auto;
+            margin-top: 40px;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #192a56;
+        }
+
+        a.button {
+            display: inline-block;
+            background: #0097e6;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        a.button:hover {
+            background: #00a8ff;
+        }
+
+        footer {
+            background: #2f3640;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Bus Delay Prediction Project</h1>
+    <p>AI & Machine Learning on Real-World Dirty Dataset</p>
+</header>
+
+<div class="container">
+
+    <div class="box">
+        <h2>📌 Project Description</h2>
+        <p>
+            This project analyzes and predicts bus delay behavior using a dirty real-world dataset.
+            The dataset includes missing timestamps, inconsistent formats, noisy weather labels,
+            incorrect GPS values, and outliers.  
+            <br><br>
+            Students perform data cleaning, preprocessing, feature engineering, model building,
+            evaluation, and interpretability analysis.
+        </p>
+    </div>
+
+    <div class="box">
+        <h2>📂 Download the Dataset</h2>
+        <a class="button" href="dirty_transport_dataset.csv" download>Download CSV File</a>
+        <br><br>
+        <a href="dirty_transport_dataset.csv">👉 View Dataset in Browser</a>
+    </div>
+
+    <div class="box">
+        <h2>🧹 Data Cleaning Steps</h2>
+        <ul>
+            <li>Fixing missing actual arrival times</li>
+            <li>Standardizing time formats (ISO: YYYY-MM-DD HH:MM)</li>
+            <li>Correcting noisy weather labels (“cloudy”, “sunny”, etc.)</li>
+            <li>Removing impossible GPS coordinates</li>
+            <li>Handling passenger count outliers</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>🤖 Machine Learning Models</h2>
+        <ul>
+            <li>Linear Regression</li>
+            <li>Random Forest Regression</li>
+            <li>Decision Tree</li>
+            <li>XGBoost (optional)</li>
+        </ul>
+    </div>
+
+    <div class="box">
+        <h2>📊 Evaluation Metrics</h2>
+        <ul>
+            <li>MAE – Mean Absolute Error</li>
+            <li>MSE – Mean Squared Error</li>
+            <li>RMSE – Root Mean Squared Error</li>
+            <li>R² Score</li>
+            <li>Cross Validation Score</li>
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 Bus Delay Prediction • Created by Felo815
+</footer>
+
+</body>
+</html>
